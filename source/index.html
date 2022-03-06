@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Эльдорадо">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Эльдорадо | Транзакционное письмо</title>
+  </head>
+  <body class="theme theme--dark">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__title-wrapper">
+        <h1 class="header__title">Транзакционное письмо</h1>
+      </div>
+
+      <!-- Header navigation -->
+      <nav class="header__navigation container">
+        <a class="header__link" href="https://www.eldorado.ru/">
+          <img class="header__logo" src="img/icons/logo.svg" width="150" height="18" alt="Эльдорадо">
+        </a>
+
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="https://www.eldorado.ru/personal/club/operations/">
+              <img class="header__navigation-image" src="img/icons/profile.svg" width="" height="" alt="Профиль">
+            </a>
+          </li>
+          <li class="header__navigation-item">
+            <a class="header__navigation-link" href="https://www.eldorado.ru/d/">
+              <img class="header__navigation-image" src="img/icons/menu.svg" width="" height="" alt="Каталог">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+      <!-- inform section -->
+      <section class="inform">
+        <div class="container">
+        <h2 class="visually-hidden">Информирование по заказу</h2>
+        <div class="inform__data">
+          <p class="inform__title">Ваш заказ №ХХХХХХХХХ обрабатывается</p>
+          <p class="inform__text">Мы подтвердим Ваш заказ в ближайшее время, а&nbspтак же сообщим ожидаемую дату доставки по&nbspСМС и эл. почте или позвоним для уточнения.</p>
+          <!-- По моему мнению, картинка - важный контект, если отвалятся стили, картинка все равно должна будет загрузиться, по - этому и сделал ее как контентный элемент, а не псевдоэлемент -->
+          <img class="inform__image" src="img/consultant.gif" width="182" height="188" alt="Картинка консультанта, показывающего палец вверх">
+        </div>
+        </div>
+      </section>
+
+      <!-- Catalog section -->
+      <section class="catalog container">
+        <h2 class="visually-hidden">Выбранные товары</h2>
+
+        <!-- Проблемно найти было этот шрифт DIN 2014, DIN PRO, подключил и то не работает для table__head -->
+        <div class="catalog__mobile">
+        <table class="catalog__table table table--mobile">
+          <caption class="visually-hidden">Таблица товаров</caption>
+          <thead class="table__head">
+            <tr class="table__row">
+              <th class="table__title table__cell--left">Товар</th>
+              <th class="table__title table__cell--center">Количество</th>
+              <th class="table__title table__cell--right">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__cell table__cell--left">
+                <img class="table__image" src="img/tv.jpg" width="" height="" alt='Ultra HD (4K) OLED телевизор 55" Sony KD-55A8'>
+                <a class="table__link" href="https://www.eldorado.ru/cat/detail/ultra-hd-4k-oled-televizor-55-sony-kd-55a8/">
+                Ultra HD (4K) OLED телевизор 55" Sony KD-55A8
+                </a>
+              </td>
+              <td class="table__cell table__cell--center" rowspan="2">1</td>
+              <td class="table__cell table__cell--right" rowspan="2">170 990 p.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell table__cell--left">
+                <img class="table__image" src="img/cleaner.jpg" width="" height="" alt='Робот-пылесос Tefal X-plorer Serie 60" (RG7455WH)'>
+                 <a class="table__link" href="https://www.eldorado.ru/cat/detail/robot-pylesos-tefal-explorer-serie-60-rg7455wh/">
+                Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)
+                </a>
+              </td>
+              <td class="table__cell table__cell--center" rowspan="2">1</td>
+              <td class="table__cell table__cell--right" rowspan="2">19 990 p.</td>
+            </tr>
+            <tr class="table__row">
+              <!-- Значимая иконка -->
+              <td class="table__cell" colspan="2">
+                <img class="table__icon" src="img/icons/truck.svg" width="20" height="14" alt="Иконка грузовика">
+              Доставка</td>
+              <td class="table__cell table__cell--right">290 р.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell table__cell--payment" colspan="2">К оплате:</td>
+              <td class="table__cell table__cell--right table__cell--total">191 270 р.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+        <!-- desktop -->
+        <!-- Проблемно найти было этот шрифт DIN 2014, DIN PRO, подключил и то не работает для table__head -->
+        <div class="catalog__desktop">
+        <table class="catalog__table table">
+          <caption class="visually-hidden">Таблица товаров</caption>
+          <thead class="table__head">
+            <tr class="table__row">
+              <th class="table__title table__cell--link table__title--left">Товар</th>
+              <th class="table__title table__title--center">Количество</th>
+              <th class="table__title table__title--right">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__row">
+              <td class="table__cell table__cell--left">
+                <img class="table__image" src="img/tv.jpg" width="" height="" alt='Ultra HD (4K) OLED телевизор 55" Sony KD-55A8'>
+              </td>
+              <td class="table__cell table__cell--link">
+                <a class="table__link" href="https://www.eldorado.ru/cat/detail/ultra-hd-4k-oled-televizor-55-sony-kd-55a8/">
+                Ultra HD (4K) OLED телевизор 55" Sony KD-55A8
+                </a>
+              </td>
+              <td class="table__cell table__cell--center">1</td>
+              <td class="table__cell table__cell--right">35 990 p.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell table__cell--left">
+                <img class="table__image" src="img/cleaner.jpg" width="" height="" alt='Робот-пылесос Tefal X-plorer Serie 60" (RG7455WH)'>
+              </td>
+              <td class="table__cell table__cell--link">
+                <a class="table__link" href="https://www.eldorado.ru/cat/detail/robot-pylesos-tefal-explorer-serie-60-rg7455wh/">
+                Робот-пылесос Tefal X-plorer Serie 60 (RG7455WH)
+                </a>
+              </td>
+              <td class="table__cell table__cell--center">1</td>
+              <td class="table__cell table__cell--right">35 990 p.</td>
+            </tr>
+            <tr class="table__row">
+              <!-- Значимая иконка -->
+              <td class="table__cell table__cell--left">
+                <img class="table__icon" src="img/icons/truck.svg" width="20" height="14" alt="Иконка грузовика">
+              Доставка</td>
+              <td class="table__cell table__cell--link"></td>
+              <td class="table__cell table__cell--center"></td>
+              <td class="table__cell table__cell--right">290 р.</td>
+            </tr>
+            <tr class="table__row">
+              <td class="table__cell table__cell--left table__cell--payment">К оплате:</td>
+              <td class="table__cell table__cell--link"></td>
+              <td class="table__cell table__cell--center"></td>
+              <td class="table__cell table__cell--right table__cell--total">56 270 р.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </section>
+
+        <!-- Data information section-->
+        <section class="data container">
+        <ul class="data__list">
+          <li class="data__item data__item--user">
+            <h3 class="data__title">Получатель</h3>
+            <p class="data__fullname data__text">Иван Иванович Иванов</p>
+            <p class="data__secondary-text">Мы направили sms на номер +7 ХХХ ХХХ ХХ ХХ с подтверждением заказа.</p>
+          </li>
+          <li class="data__item data__item--delivery">
+            <h3 class="data__title">Доставка курьером</h3>
+            <address class="data__address">
+              <p class="data__text">Москва, ул. Тихая,д.2а,кв.12</p>
+              <p class="data__secondary-text">
+                <span class="data__delivery">Дата доставки заказа:</span>
+                <time class="data__date" datetime="2020-03-25">25.03.2020</time>
+                <span class="data__time">Время:</span> с 09:00 по 22:00
+              </p>
+            </address>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Offer section -->
+      <section class="offer">
+        <div class="container">
+        <h2 class="visually-hidden">Специальное бонусное предложение!</h2>
+        <ul class="offer__list">
+          <li class="offer__item">
+            <a class="offer__link" href="https://www.eldorado.ru/club/referral/">
+              <img class="offer__image offer__image--many" src="img/many.gif" width="" height="" alt="Приглашайте друзей и получайте бонусы">
+            </a>
+          </li>
+          <li class="offer__item">
+            <a class="offer__link" href="https://www.eldorado.ru/promo/prm-bonuses-for-feedback/">
+              <img class="offer__image offer__image--one" src="img/one.gif" width="" height="" alt="Дарим бонусы за отзыв">
+            </a>
+          </li>
+        </ul>
+
+        <p class="offer__farewell-text"><strong class="offer__accent">Ждем вас снова!</strong></p>
+        <p class="offer__sign">Ваш Эльдорадо.</p>
+        </div>
+      </section>
+
+      <!-- Alert section -->
+      <section class="alert">
+        <div class="container">
+        <h2 class="visually-hidden">Предупреждение</h2>
+        <p class="alert__text">Это письмо было отправлено автоматически.</p>
+        <p class="alert__text">Если вы не создавали заказ на нашем ресурсе, <a class="alert__feedback-link" href="https://www.eldorado.ru/help/eldorado/contact_us.php">сообщите нам</a> об этом.</p>
+      </div>
+      </section>
+
+      <!-- Opportunity section -->
+      <section class="opportunity">
+        <div class="container">
+        <h2 class="visually-hidden">Дополнительные возможности</h2>
+        <a class="opportunity__link" href="https://www.eldorado.ru/">
+          <img class="opportunity__logo" src="img/icons/logo-white.svg" width="150" height="18" alt="Эльдорадо">
+        </a>
+        <ul class="opportunity__list">
+          <li class="opportunity__item opportunity__item--clock">
+            <a class="opportunity__link" href="https://www.eldorado.ru/promo/internetrassrochka/">
+              <img class="opportunity__image" src="img/1.png" width="52" height="50" alt="Рассрочка онлайн за 1 минуту">
+            </a>
+          </li>
+          <li class="opportunity__item opportunity__item--wallet">
+            <a class="opportunity__link" href="https://www.eldorado.ru/promo/110-uverennosti-v-tsene/">
+              <img class="opportunity__image" src="img/2.png" width="52" height="50" alt="Гарантия низкой цены">
+            </a>
+          </li>
+          <li class="opportunity__item opportunity__item--pin">
+            <a class="opportunity__link" href="https://www.eldorado.ru/help/delivery/">
+              <img class="opportunity__image" src="img/3.png" width="57" height="50" alt="Быстрая и бережная доставка">
+            </a>
+          </li>
+          <li class="opportunity__item opportunity__item--bonus">
+            <a class="opportunity__link" href="https://www.eldorado.ru/club/">
+              <img class="opportunity__image" src="img/4.png" width="62" height="50" alt="Бонусная программа Эльдорадости">
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+      <!-- Call back block -->
+      <div class="footer__index">
+      <div class="footer__call-back">
+        <h3 class="footer__call-back-text footer__title">Звоните</h3>
+        <p class="footer__number">
+          <a class="footer__number-link" href="tel:+78002502525">8 800 250 25 25</a>
+        </p>
+      </div>
+
+      <!-- Social block -->
+      <div class="footer__social social">
+        <h3 class="social__title footer__title">Следите за новостями</h3>
+        <ul class="social__list">
+          <li class="social__item social__item--instagram">
+            <a class="social__link" href="https://www.instagram.com/eldorado_ru/">
+              <img class="social__image social__image--instagram" src="img/icons/instagram.svg" width="19" height="19" alt="Instagram">
+            </a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a class="social__link" href="https://www.facebook.com/Eldorado.Stores">
+              <img class="social__image social__image--facebook" src="img/icons/facebook.svg" width="10" height="19" alt="Facebook">
+            </a>
+          </li>
+          <li class="social__item social__item--ok">
+            <a class="social__link" href="https://ok.ru/eldorado.stores">
+              <img class="social__image social__image--ok" src="img/icons/ok.svg" width="15" height="19" alt="Odnoklassniki">
+            </a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a class="social__link" href="https://vk.com/eldorado_stores">
+              <img class="social__image social__image--vk" src="img/icons/vk.svg" width="20" height="12" alt="VK">
+            </a>
+          </li>
+          <li class="social__item social__item--youtube">
+            <a class="social__link" href="https://www.youtube.com/user/eldoradovideo">
+              <img class="social__image social__image--youtube" src="img/icons/youtube.svg" width="19" height="14" alt="Youtube">
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+
+      <p class="footer__unsubscribe-text footer__text">Вы получили это письмо, так как подписались на рассылку от Эльдорадо. Чтобы не пропускать наши акции и скидки, добавьте адрес <a class="footer__add-mail" href="mailto:eldorado@club.eldorado.ru">eldorado@club.eldorado.ru</a> в адресную книгу.</p>
+      <p class="footer__miss-text">Вы можете <a class="footer__unsubscribe-link" href="{{UnsubscribeUrl}}">отписаться</a>, но мы будем скучать :(</p>
+      <p class="footer__notice-text footer__text">Цены действительны на момент отправки письма и могут различаться в зависимости от региона покупки.</p>
+      <div class="footer__index">
+        <p class="footer__version">Веб-версия по <a class="footer__version-link" href="{{WebLetterUrl}}">ссылке.</a></p>
+        <p class="footer__copyright"><a class="footer__copyright-link" href="https://www.eldorado.ru/">© Эльдорадо, 2021</a></p>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>

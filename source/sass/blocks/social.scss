@@ -1,0 +1,45 @@
+.social__list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	@include reset-list;
+	margin-bottom: 30px;
+}
+
+.social__item {
+	margin-right: 20px;
+
+	&--instagram,
+	&--facebook,
+	&--ok,
+	&--vk,
+	&--youtube {
+		margin-right: 30px;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.social__list {
+		align-items: unset;
+		margin: 0;
+	}
+
+	.social__item {
+		&--instagram,
+		&--facebook {
+			margin-right: 45px;
+		}
+
+		&--ok {
+			margin-right: 41.47px;
+		}
+
+		&--vk {
+			margin-right: 43.57px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+/* Verdana regular */
+@font-face {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  //font-display: optional;
+  src: url("../fonts/Verdana.woff2") format("woff2"),
+    url("../fonts/Verdana.woff") format("woff");
+}
+
+/* Verdana bold */
+@font-face {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  //font-display: optional;
+  src: url("../fonts/Verdana-Bold.woff2") format("woff2"),
+    url("../fonts/Verdana-Bold.woff") format("woff");
+}
+
+/* DIN 2014 bold */
+@font-face {
+  font-family: "DIN 2014";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  //font-display: optional;
+  src: url("../fonts/DIN2014-Bold.woff2") format("woff");
+}

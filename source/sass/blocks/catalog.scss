@@ -1,0 +1,26 @@
+.catalog {
+	background-color: $main-background-color;
+}
+
+.catalog__desktop {
+	display: none;
+}
+
+@media (min-width: $desktop-width) {
+	.catalog {
+
+		background: url('../img/icons/shape.svg') top left / 57px 350px no-repeat,
+			url('../img/icons/shape.svg') top left / 57px 746px no-repeat,
+			url('../img/icons/rotated-shape.svg') top right / 57px 730px no-repeat,
+			url('../img/icons/rotated-shape.svg') top right / 57px 330px no-repeat;
+			background-color: $main-background-color;
+	}
+
+	.catalog__mobile {
+		display: none;
+	}
+
+	.catalog__desktop {
+		display: block;
+	}
+}

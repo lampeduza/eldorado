@@ -1,0 +1,95 @@
+.opportunity {
+	.container {
+		background-color: #76bc34;
+		padding-top: 10px;
+	}
+}
+
+.opportunity__link {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.opportunity__list {
+	display: flex;
+	justify-content: space-between;
+	@include reset-list;
+}
+
+.opportunity__item {
+	position: relative;
+	padding-left: 20px;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: -4px;
+		content: '';
+		background-repeat: no-repeat;
+		background-position: centent;
+	}
+
+	&--clock::before {
+		width: 21px;
+		height: 26px;
+		background-image: url('../img/icons/clock.svg');
+	}
+
+	&--wallet::before {
+		width: 24px;
+		height: 25px;
+		background-image: url('../img/icons/wallet.svg');
+	}
+
+	&--pin::before {
+		width: 17px;
+		height: 27px;
+		background-image: url('../img/icons/pin.svg');
+		left: 4px;
+	}
+
+	&--bonus::before {
+		width: 23px;
+		height: 19px;
+		background-image: url('../img/icons/sand-clock.svg');
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.opportunity {
+		.container {
+			padding-top: 6px;
+			padding-bottom: 6px;
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.opportunity__link {
+		margin-right: 11px;
+	}
+
+	.opportunity__item {
+		&--clock {
+			padding-left: 25px;
+		}
+
+		&--wallet {
+			padding-left: 26px;
+		}
+
+		&--pin {
+			padding-left: 19px;
+		}
+
+		&--bonus {
+			padding-left: 30px;
+		}
+
+		&::before {
+			left: 0;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+}

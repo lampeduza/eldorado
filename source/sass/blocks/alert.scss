@@ -1,0 +1,29 @@
+.alert {
+
+	.container {
+		background-color: #a60229;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+}
+
+.alert__text {
+	margin: 0;
+	color: #fff;
+	font-size: 12px;
+	line-height: 23px;
+	text-align: center;
+}
+
+.alert__feedback-link {
+	color: inherit;
+	// Пропустили выделение значимой ссылки в макете
+	font-weight: 600;
+}
+
+@media (min-width: $desktop-width) {
+	.alert__text {
+		font-size: 13px;
+		line-height: 23px;
+	}
+}

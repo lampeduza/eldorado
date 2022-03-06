@@ -1,0 +1,127 @@
+.data {
+	background-color: $main-background-color;
+}
+
+.data__list {
+	color: white;
+	background-color: #f3f3f3; // temporary
+	@include reset-list;
+	padding: 30px 0;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.data__item {
+	position: relative;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	&--user {
+		margin-bottom: 35px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 10px;
+		content: '';
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&--user::before {
+		width: 26px;
+		height: 26px;
+		background-size: 26px 26px;
+		background-image: url('../img/icons/user.svg');
+	}
+
+	&--delivery::before {
+		width: 30px;
+		height: 20px;
+		background-size: 30px 20px;
+		background-image: url('../img/icons/truck.svg');
+	}
+}
+
+.data__title,
+.data__text {
+	color: #393d41;
+	margin: 0;
+	font-size: 13px;
+}
+
+.data__title {
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+.data__secondary-text {
+	font-size: 13px;
+	color: rgba(53, 53, 53, 0.54);
+}
+
+.data__delivery,
+.data__time {
+	font-weight: 700;
+}
+
+.data__date {
+	display: block;
+}
+
+.data__text {
+	font-style: normal;
+}
+
+@media (min-width: $desktop-width) {
+	.data__list {
+		display: flex;
+		padding: 19px 0;
+	}
+
+	.data__item {
+		padding-right: 0;
+		width: 49%;
+		padding-left: 74px;
+
+		&:last-child {
+			padding-left: 33.7px;
+		}
+
+		&::before {
+			top: 8px;
+			left: 34px;
+		}
+
+		&--delivery {
+			&::before {
+				width: 37px;
+				height: 25.65px;
+				background-size: 37px 25.65px;
+				left: -11px;
+			}
+		}
+
+		&--user {
+			margin-bottom: 0;
+		}
+	}
+
+	.data__title {
+		font-size: 12px;
+		line-height: 25.5px;
+		margin: 0;
+	}
+
+	.data__secondary-text {
+		font-size: 11px;
+		line-height: 12px;
+		margin: 8px 0 0 0;
+		padding-right: 24px;
+	}
+
+	.data__date {
+		font-style: normal;
+	}
+}
